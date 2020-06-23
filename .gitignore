@@ -1,0 +1,9 @@
+venv/
+spark-warehouse/
+metastore_db/
+data.csv
+abc.csv
+test/
+.idea
+derby.log
+covid_data.java

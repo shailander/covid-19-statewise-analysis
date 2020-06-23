@@ -1,0 +1,14 @@
+[2020-07-01 16:49:28,572] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.connect_mysql_task 2020-07-01T11:17:10.155731+00:00 [queued]>
+[2020-07-01 16:49:28,580] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.connect_mysql_task 2020-07-01T11:17:10.155731+00:00 [queued]>
+[2020-07-01 16:49:28,580] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-01 16:49:28,580] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-07-01 16:49:28,580] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-01 16:49:28,587] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): connect_mysql_task> on 2020-07-01T11:17:10.155731+00:00
+[2020-07-01 16:49:28,589] {standard_task_runner.py:53} INFO - Started process 55144 to run task
+[2020-07-01 16:49:28,630] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_data_dag.connect_mysql_task 2020-07-01T11:17:10.155731+00:00 [running]> localhost.localdomain
+[2020-07-01 16:49:28,645] {logging_mixin.py:112} INFO - Connected to MySQL
+[2020-07-01 16:49:28,645] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-07-01 16:49:28,652] {taskinstance.py:1052} INFO - Marking task as SUCCESS.dag_id=covid_data_dag, task_id=connect_mysql_task, execution_date=20200701T111710, start_date=20200701T111928, end_date=20200701T111928
+[2020-07-01 16:49:38,574] {logging_mixin.py:112} INFO - [2020-07-01 16:49:38,573] {local_task_job.py:103} INFO - Task exited with return code 0

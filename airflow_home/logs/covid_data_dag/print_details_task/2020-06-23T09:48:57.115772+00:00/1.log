@@ -1,0 +1,14 @@
+[2020-06-23 15:19:46,920] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.print_details_task 2020-06-23T09:48:57.115772+00:00 [queued]>
+[2020-06-23 15:19:46,926] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.print_details_task 2020-06-23T09:48:57.115772+00:00 [queued]>
+[2020-06-23 15:19:46,926] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-23 15:19:46,926] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-06-23 15:19:46,926] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-23 15:19:46,933] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): print_details_task> on 2020-06-23T09:48:57.115772+00:00
+[2020-06-23 15:19:46,935] {standard_task_runner.py:53} INFO - Started process 41806 to run task
+[2020-06-23 15:19:46,974] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_data_dag.print_details_task 2020-06-23T09:48:57.115772+00:00 [running]> localhost.localdomain
+[2020-06-23 15:19:46,983] {logging_mixin.py:112} INFO - <airflow.configuration.AirflowConfigParser object at 0x7f309c74fd60>
+[2020-06-23 15:19:46,983] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-06-23 15:19:46,986] {taskinstance.py:1052} INFO - Marking task as SUCCESS.dag_id=covid_data_dag, task_id=print_details_task, execution_date=20200623T094857, start_date=20200623T094946, end_date=20200623T094946
+[2020-06-23 15:19:56,926] {logging_mixin.py:112} INFO - [2020-06-23 15:19:56,925] {local_task_job.py:103} INFO - Task exited with return code 0

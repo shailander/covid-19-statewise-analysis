@@ -1,0 +1,24 @@
+[2020-06-24 09:28:54,768] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.get_covid_data_task 2020-06-24T03:57:12.240438+00:00 [queued]>
+[2020-06-24 09:28:54,777] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.get_covid_data_task 2020-06-24T03:57:12.240438+00:00 [queued]>
+[2020-06-24 09:28:54,777] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-24 09:28:54,777] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-06-24 09:28:54,777] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-24 09:28:54,784] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): get_covid_data_task> on 2020-06-24T03:57:12.240438+00:00
+[2020-06-24 09:28:54,787] {standard_task_runner.py:53} INFO - Started process 72758 to run task
+[2020-06-24 09:28:54,831] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_data_dag.get_covid_data_task 2020-06-24T03:57:12.240438+00:00 [running]> localhost.localdomain
+[2020-06-24 09:28:55,199] {logging_mixin.py:112} INFO - API Data is valid
+[2020-06-24 09:28:55,199] {taskinstance.py:1145} ERROR - File not parsed completely/correctly
+Traceback (most recent call last):
+  File "/home/nineleaps/PycharmProjects/ProjectX/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 983, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/nineleaps/PycharmProjects/ProjectX/venv/lib/python3.8/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/nineleaps/PycharmProjects/ProjectX/venv/lib/python3.8/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nineleaps/PycharmProjects/ProjectX/airflow_home/plugins/etl_tasks.py", line 36, in get_data
+    raise ValueError('File not parsed completely/correctly')
+ValueError: File not parsed completely/correctly
+[2020-06-24 09:28:55,200] {taskinstance.py:1168} INFO - Marking task as UP_FOR_RETRY
+[2020-06-24 09:29:04,773] {logging_mixin.py:112} INFO - [2020-06-24 09:29:04,772] {local_task_job.py:103} INFO - Task exited with return code 1

@@ -1,0 +1,21 @@
+[2020-06-29 22:21:59,400] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.upload_data_hive_task 2020-06-29T16:50:11.128574+00:00 [queued]>
+[2020-06-29 22:21:59,409] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.upload_data_hive_task 2020-06-29T16:50:11.128574+00:00 [queued]>
+[2020-06-29 22:21:59,410] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 22:21:59,410] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-06-29 22:21:59,410] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 22:21:59,419] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): upload_data_hive_task> on 2020-06-29T16:50:11.128574+00:00
+[2020-06-29 22:21:59,423] {standard_task_runner.py:53} INFO - Started process 28009 to run task
+[2020-06-29 22:21:59,476] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_data_dag.upload_data_hive_task 2020-06-29T16:50:11.128574+00:00 [running]> localhost.localdomain
+[2020-06-29 22:22:09,055] {logging_mixin.py:112} INFO - +---------------+
+|      partition|
++---------------+
+|date=2020-28-06|
+|date=2020-29-06|
++---------------+
+[2020-06-29 22:22:09,055] {logging_mixin.py:112} INFO - 
+[2020-06-29 22:22:09,056] {logging_mixin.py:112} INFO - upload data to hive
+[2020-06-29 22:22:09,056] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-06-29 22:22:09,060] {taskinstance.py:1052} INFO - Marking task as SUCCESS.dag_id=covid_data_dag, task_id=upload_data_hive_task, execution_date=20200629T165011, start_date=20200629T165159, end_date=20200629T165209
+[2020-06-29 22:22:09,392] {logging_mixin.py:112} INFO - [2020-06-29 22:22:09,391] {local_task_job.py:103} INFO - Task exited with return code 0

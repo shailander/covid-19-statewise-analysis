@@ -1,0 +1,54 @@
+[2020-07-10 11:38:15,934] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.get_covid_data_upload_hdfs_task 2020-07-03T12:22:27.407516+00:00 [queued]>
+[2020-07-10 11:38:15,941] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_data_dag.get_covid_data_upload_hdfs_task 2020-07-03T12:22:27.407516+00:00 [queued]>
+[2020-07-10 11:38:15,941] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-10 11:38:15,941] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-07-10 11:38:15,941] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-07-10 11:38:15,949] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): get_covid_data_upload_hdfs_task> on 2020-07-03T12:22:27.407516+00:00
+[2020-07-10 11:38:15,951] {standard_task_runner.py:53} INFO - Started process 54990 to run task
+[2020-07-10 11:38:15,994] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_data_dag.get_covid_data_upload_hdfs_task 2020-07-03T12:22:27.407516+00:00 [running]> localhost.localdomain
+[2020-07-10 11:38:16,247] {logging_mixin.py:112} INFO - API Data is valid
+[2020-07-10 11:38:16,276] {logging_mixin.py:112} INFO -     active confirmed deaths recovered                                     state        date
+0   277823    795606  21634    496048                                     Total  2020-07-10
+1    93654    230599   9667    127259                               Maharashtra  2020-07-10
+2    46655    126581   1765     78161                                Tamil Nadu  2020-07-10
+3    21567    107051   3258     82226                                     Delhi  2020-07-10
+4     9529     39280   2009     27742                                   Gujarat  2020-07-10
+5    10373     32362    862     21127                             Uttar Pradesh  2020-07-10
+6    17778     31105    488     12835                                 Karnataka  2020-07-10
+7    12423     30946    331     18192                                 Telangana  2020-07-10
+8     8231     25911    854     16826                               West Bengal  2020-07-10
+9    11383     23814    277     12154                            Andhra Pradesh  2020-07-10
+10    5043     22678    495     17140                                 Rajasthan  2020-07-10
+11    4572     19364    287     14505                                   Haryana  2020-07-10
+12    3475     16341    634     12232                            Madhya Pradesh  2020-07-10
+13    5423     14601     27      9148                                     Assam  2020-07-10
+14    4077     13978    109      9792                                     Bihar  2020-07-10
+15    4476     11956     73      7407                                    Odisha  2020-07-10
+16    3652      9501    154      5695                         Jammu and Kashmir  2020-07-10
+17    2012      7140    183      4945                                    Punjab  2020-07-10
+18    2795      6535     28      3708                                    Kerala  2020-07-10
+19    4161      4161      0         0                          State Unassigned  2020-07-10
+20     748      3666     15      2903                              Chhattisgarh  2020-07-10
+21     558      3305     46      2672                               Uttarakhand  2020-07-10
+22    1035      3268     23      2210                                 Jharkhand  2020-07-10
+23     869      2151      9      1273                                       Goa  2020-07-10
+24     437      1789      1      1338                                   Tripura  2020-07-10
+25     651      1450      0       799                                   Manipur  2020-07-10
+26     618      1272     17       637                                Puducherry  2020-07-10
+27     284      1140     10       833                          Himachal Pradesh  2020-07-10
+28     139      1055      1       915                                    Ladakh  2020-07-10
+29     392       696      0       304                                  Nagaland  2020-07-10
+30     113       523      7       403                                Chandigarh  2020-07-10
+31     247       456      1       205  Dadra and Nagar Haveli and Daman and Diu  2020-07-10
+32     180       302      2       120                         Arunachal Pradesh  2020-07-10
+33      83       226      0       143                                   Mizoram  2020-07-10
+34      73       156      0        83               Andaman and Nicobar Islands  2020-07-10
+35      50       134      0        71                                    Sikkim  2020-07-10
+36      67       113      1        45                                 Meghalaya  2020-07-10
+37       0         0      0         0                               Lakshadweep  2020-07-10
+[2020-07-10 11:38:18,102] {logging_mixin.py:112} INFO - Covid Statewise Data CSV is uploaded to HDFS
+[2020-07-10 11:38:18,103] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-07-10 11:38:18,112] {taskinstance.py:1052} INFO - Marking task as SUCCESS.dag_id=covid_data_dag, task_id=get_covid_data_upload_hdfs_task, execution_date=20200703T122227, start_date=20200710T060815, end_date=20200710T060818
+[2020-07-10 11:38:25,936] {logging_mixin.py:112} INFO - [2020-07-10 11:38:25,935] {local_task_job.py:103} INFO - Task exited with return code 0
